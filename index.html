@@ -77,17 +77,21 @@
 </body>
 </html>
 <script>
-// 获取歌曲信息的元素
+// 获取白骨哀的<span>元素
+    var songNameElement = document.getElementById("songName");
+
+// 获取三个元素
 var songNumberElement = document.getElementById("songNumber");
 var singerNameElement = document.getElementById("singerName");
 
-// 给歌曲信息的元素添加点击事件监听器
+// 为这三个元素绑定点击事件处理函数
 songNumberElement.addEventListener("click", copySongInfo);
+songNameElement.addEventListener("click", copySongInfo);
 singerNameElement.addEventListener("click", copySongInfo);
 
 function copySongInfo() {
     // 获取白骨哀的歌名
-    var songName = document.getElementById("songName").innerText;
+    var songName = songNameElement.innerText;
 
     // 构建要复制到剪贴板的文本
     var copyText = "点歌 " + songName;
@@ -122,7 +126,5 @@ function copySongInfo() {
         copyAlert.style.display = "none";
     }, 2000);
 }
-
-
 
 </script>
