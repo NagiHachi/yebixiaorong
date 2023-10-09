@@ -1,0 +1,45 @@
+.bgimg{
+    position: fixed;
+    background-image: url(../image/bg.JPG);
+    width: 100%;
+    height: 100%;
+    background-size: cover ;
+    opacity : 60%;
+    z-index: -1; 
+}
+.navbar-brand img {
+    max-width: 150px; /* 设置图片的最大宽度为100像素，你可以根据需要调整这个值 */
+    max-height: 50px;
+    vertical-align: middle; /* 让图片垂直居中 */
+}
+.navbar {
+    background-color: #9cc7d8 ; /* 水蓝色的十六进制表示 */
+}
+.col-md-9 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+h1 {
+    margin-bottom: 20px; /* 可以根据需要调整标题与其他文本之间的间距 */
+}
+.run{
+    font-size: 25px;
+    color : red;
+}
+.temp{
+    color : red;
+}
+.copy-alert {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+}
+
